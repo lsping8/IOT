@@ -11,7 +11,7 @@ board.on('ready', function() {
   // do Johnny-Five stuff
 
   app.use(function *() {
-  this.body = 'Hello World';
+  console.log('hello-world')
 });
 
 if (!module.parent) app.listen(3000);

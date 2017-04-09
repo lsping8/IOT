@@ -1,5 +1,6 @@
 const five = require('johnny-five');
 const chipio = require('chip-io');
+var views = require('co-views');
 const koa = require('koa');
 const app = new koa();
 

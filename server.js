@@ -1,7 +1,7 @@
 const five = require('johnny-five');
 const chipio = require('chip-io');
 const koa = require('koa');
-const app = module.exports = koa();
+const app = new koa();
 
 const board = new five.Board({
   io: new chipio()

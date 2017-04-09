@@ -2,6 +2,7 @@ const five = require('johnny-five');
 const chipio = require('chip-io');
 const views = require('co-views');
 const koa = require('koa');
+var path = require('path');
 const app = new koa();
 
 const board = new five.Board({

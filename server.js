@@ -1,6 +1,6 @@
 const five = require('johnny-five');
 const chipio = require('chip-io');
-var views = require('co-views');
+const views = require('co-views');
 const koa = require('koa');
 const app = new koa();
 
@@ -20,7 +20,7 @@ board.on('ready', function() {
   age: 3
 };
 
-  const render = views(path.join(__dirname, '/'), { ext: 'html' });
+  const render = views(path.join(__dirname, '/'));
 
   app.use(function *() {
   this.body = yield render('user', { user: user });

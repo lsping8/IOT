@@ -20,7 +20,7 @@ board.on('ready', function() {
   age: 3
 };
 
-  const render = views(path.join(__dirname, '/'));
+  const render = views(path.join(__dirname, '/'), { ext: 'html' });
 
   app.use(function *() {
   this.body = yield render('user', { user: user });
